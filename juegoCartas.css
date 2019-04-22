@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::before{
+    content: "";
+    background: url('img/fondo3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width:100%;  
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+    
+    filter: blur(4px);
+}
+
+/* HEADER */
+
+.titulo{
+    text-align: center;
+    font-family: 'comic sans ms';
+    font-size: 50px;
+    color:#E56C30;
+    text-shadow: 2px 2px 5px black;
+    margin: 30px 0;
+    font-variant: small-caps;
+    
+}
+
+.titulo2{
+    text-align: center;
+    font-family: 'comic sans ms';
+    color:#E56C30;
+    text-shadow: 2px 2px 3px black;    
+    margin-bottom: 25px;
+}
+
+.botones{
+    margin: 25px auto;
+    width: 224px;
+}
+
+input{
+    margin: 0 5px;
+    padding: 5px 10px;
+    width: 100px;
+}
+
+#versatil{
+    visibility: hidden;
+    margin: 25px auto; 
+    padding: 5px 10px;
+    width: 300px;
+
+    text-align: center;
+    color:white;
+    background-color: #E56C30;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+}
+
+/* SECTION */
+
+section{
+    margin: auto;
+    width: 80%;
+    min-height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 150px;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+img:hover{
+    width: 165px;
+}
+
+/* img{
+    width: 150px;
+    height: 220px;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+img:hover{
+    width: 165px;
+    transform: scaleY(1.1);
+} */
+
+/* a{
+    margin: 20px 25px;
+} */
+
+#ganado{
+    display: none;
+    margin: 25px auto; 
+    padding: 5px 10px;
+    width: 80%;
+    text-align: center;
+
+    font-family: 'comic sans ms';
+    color:white;
+    background-color: #65E530;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px black;
+    box-shadow: 4px 4px 10px black;
+}
+
+/* .giro{
+    transform: rotate( 180deg ); 
+} */
+
+.error{
+    box-shadow: 4px 4px 50px red;
+}
+
+.bien{
+    box-shadow: 4px 4px 50px green;
+}
+
+
+/* ROTACION */
+
+.rotacion{
+    animation: rotate 0.55s linear 1;
+}
+
+@keyframes rotate{
+    0%{transform: rotate3d(0, 2, 0, 0deg);}
+    50%{transform: rotate3d(0, 2, 0, -45deg);}
+    100%{transform: rotate3d(0, 2, 0, -90deg);} 
+}
+
+.rotacion2{
+    animation: rotate2 0.6s linear 1;
+}
+
+@keyframes rotate2{
+    0%{transform: rotate3d(0, 2, 0, 90deg);}
+    50%{transform: rotate3d(0, 2, 0, 45deg);}
+    100%{transform: rotate3d(0, 2, 0, 0deg);}
+}
+
+@media screen and (max-width:768px){
+    img{
+        width: 70px;
+    }
+
+    img:hover{
+        width: 80px;
+    }
+}
