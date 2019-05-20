@@ -56,6 +56,6 @@ function reiniciar(){
 
 //PUNTUACION DEL JUEGO
 function puntuacion(){
-    alert('Has jugado un total de '+veces_jugadas+' veces.\nHas escontrado al Joker '+ganados+' veces a la primera!\nHas escontrao al Joker '+superior_uno+' veces después del primer intento!');
+    alert('Has jugado un total de '+veces_jugadas+' veces.\nHas encontrado al Joker '+ganados+' veces a la primera!\nHas encontrado al Joker '+superior_uno+' veces después del primer intento!');
 }
 
